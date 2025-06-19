@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <h1>Rock paper scissors</h1>
+    <h2>Choose your weapon:</h2>
+    <button onclick="getresult('rock')">Rock</button>
+    <button onclick="getresult('paper')">Paper</button>
+    <button onclick="getresult('scissors')">Scissors</button>
+    <div id="result"></div>
+    <script>
+        function getresult(userchoice){
+            var choice=['rock','paper','scissors'];
+            var computerchoice = choice[Math.floor(Math.random()*3)];
+            console.log(computerchoice);
+            var result = " ";
+            if(userchoice==computerchoice){
+                result="Draw";
+            }
+           else if(
+                (userchoice === "rock" && computerchoice === "paper") ||
+                (userchoice === "scissors" && computerchoice === "rock") ||
+                (userchoice === "paper" && computerchoice === "scissors")
+            ){
+                result = "You lose! Computer chose " + computerchoice + ".";
+            }
+            else{
+                result="win";
+            }
+            
+        document.getElementById("result").innerHTML = "You chose " + userchoice + ". Computer chose " + computerchoice + ". You " + result + "!";
+         } </script>
+
+</body>
+</html>
