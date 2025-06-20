@@ -1,0 +1,98 @@
+navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e2f; /* Dark professional background */
+  padding: 15px 30px;
+  gap: 40px;
+  border-radius: 10px;
+  border: 2px solid #4f46e5; /* Indigo border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+/* Navigation Links */
+.Link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect */
+.Link:hover {
+  background-color: #4f46e5; /* Indigo background */
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.4);
+}
+/* Login Form Styles */
+.login-container {
+  max-width: 350px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #23234a;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(79, 70, 229, 0.15);
+  border: 1.5px solid #4f46e5;
+}
+
+.login-container h1 {
+  color: #4f46e5;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.login-form label {
+  display: block;
+  color: #fff;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid #4f46e5;
+  border-radius: 6px;
+  background: #1e1e2f;
+  color: #fff;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.login-form input:focus {
+  border: 1.5px solid #4f46e5;
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px 0;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-form button:hover {
+  background: #3730a3;
+}
+
+.login-message {
+  margin-top: 18px;
+  text-align: center;
+  color: #ffb300;
+  font-weight: 500;
+}
